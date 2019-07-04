@@ -4,7 +4,7 @@ MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggle
 MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
 } from "mdbreact";
 
-class NavbarPage extends Component {
+class NavBar extends Component {
 state = {
   isOpen: false
 };
@@ -60,4 +60,4 @@ render() {
   }
 }
 
-export default NavbarPage;
+export default NavBar;

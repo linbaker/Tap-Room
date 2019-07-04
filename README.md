@@ -67,4 +67,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 Beer Wall Photo Credit
-Photo by <a href="/photographer/dlritter-35371">dlritter</a> from <a href="https://freeimages.com/">FreeImages</a>
+Photo by Tim Mossholder from Pexels

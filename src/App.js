@@ -4,7 +4,8 @@ import logo from './logo.svg';
 import './App.css';
 import 'mdbreact/dist/css/mdb.css';
 import NavBar from './NavBar';
-import HomeSplash from './HomeSplash'
+import HomeSplash from './HomeSplash';
+import About from './About';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <NavBar/>
     </HashRouter>
     <HomeSplash/>
+    <About/>
     </div>
   );
 }

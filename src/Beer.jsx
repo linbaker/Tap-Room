@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from "prop-types";
 
 function Beer(props){
+
+  function pourPint(beer){
+
+  }
   return (
     <div>
       <h2><em>{props.brand}</em>{props.name}</h2>

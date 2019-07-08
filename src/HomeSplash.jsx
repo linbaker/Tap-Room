@@ -1,18 +1,22 @@
 import React from 'react';
 import TapsPhoto from './assets/taps.jpg';
+import Logo from './assets/logo.png';
+import About from './About';
 
 function HomeSplash() {
   const homeSplashStyles = {
-    width: '88%',
+    width: '100vw',
     height: '800px',
     backgroundImage: `url(${TapsPhoto})`,
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat'
   }
   return (
     <div style={homeSplashStyles}>
-      <h1>Tap Room Name</h1>
+      <img src={require("./assets/logo.png")} alt="Logo"/>
       <h3>Here is the Tap Room Tag Line</h3>
     <br/>
+    <About/>
     </div>
   );
 }

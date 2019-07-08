@@ -16,7 +16,7 @@ function BeerListByIBU() {
     }
     return comparison;
   }
-  var beers[] =
+  // var beers[] =
 
     return (
       <div>

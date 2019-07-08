@@ -1,6 +1,5 @@
 import React from 'react';
 import TapsPhoto from './assets/taps.jpg';
-import Logo from './assets/logo.png';
 import About from './About';
 
 function HomeSplash() {
@@ -13,7 +12,7 @@ function HomeSplash() {
   }
   return (
     <div style={homeSplashStyles}>
-      <img src={require("./assets/logo.png")} alt="Logo"/>
+      <h1>Generic Brewery</h1>
       <h3>Here is the Tap Room Tag Line</h3>
     <br/>
     <About/>

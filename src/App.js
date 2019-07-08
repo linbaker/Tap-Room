@@ -20,6 +20,7 @@ function App() {
           <Route path="/AboutUs" component={About} />
         </Switch>
     </HashRouter>
+    <About/>
     </div>
   );
 }

@@ -6,7 +6,8 @@ import 'mdbreact/dist/css/mdb.css';
 import NavBar from './NavBar';
 import HomeSplash from './HomeSplash';
 import About from './About';
-import BeerList from './BeerList'
+import BeerList from './BeerList';
+import BeerListByIBU from './BeerListByIBU';
 
 function App() {
   return (

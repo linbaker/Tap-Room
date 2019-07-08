@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 function Beer(props){
 
   function pourPint(beer){
+    return beer--;
 
   }
   return (

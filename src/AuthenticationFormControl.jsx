@@ -20,17 +20,9 @@ function HomeSplash() {
     // justifyContent: 'center'
   }
   return (
-    <div style={homeSplashStyles}>
-      <Row vertical='center'>
-       <Column flexGrow={1} horizontal='center'>
-         <div style={logoStyles}>
-           <img src={logo} alt="Generic Breweric Beer Barrel Logo" />
-         </div>
-       </Column>
-   </Row>
-
-    <br/>
-    </div>
+<formAction>
+<onInput></onInput>
+</formAction>
   );
 }
 

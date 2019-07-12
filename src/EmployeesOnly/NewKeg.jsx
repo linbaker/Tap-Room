@@ -8,26 +8,42 @@ function NewKeg(){
         <input
           type='text'
           id='name'
-          placeholder='Beer name'/><br/><br/>
+          placeholder='Name'/>
+
+        <input
+          type='text'
+          id='brand'
+          placeholder='Brand'/>
 
         <input
           type='text'
           id='type'
-          placeholder='Beer type'/><br/><br/>
+          placeholder='Type'/>
 
-        <input
-          type='number'
-          id='ABV'
-          placeholder='ABV'/><br/><br/>
 
         <input
           type='number'
           id='price'
-          placeholder='Beer price'/><br/><br/>
+          placeholder='Price'/>
+
+        <input
+          type='number'
+          id='ibu'
+          placeholder='IBU'/>
+
+        <input
+          type='number'
+          id='abv'
+          placeholder='ABV'/>
 
         <textarea
           id='description'
-          placeholder='Beer description.'/><br/><br/>
+          placeholder='Beer description.'/>
+
+        <input
+          type='number'
+          id='pints'
+          placeholder='ABV'/>
 
         <button type='submit'>Add new beer</button>
       </form>
@@ -35,7 +51,7 @@ function NewKeg(){
   );
 }
 
-export default AddKeg;
+export default NewKeg;
 
 name: "Sour Flower",
 brand: "Culmination",

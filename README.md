@@ -14,7 +14,7 @@ _This application will display basic information about a brewery, including whic
 
 ## Specifications
 
-![ss1]https://github.com/linbaker/Tap-Room/blob/master/diagram.jpg)
+![ss1](https://github.com/linbaker/Tap-Room/blob/master/diagram.jpg)
 
 ## Setup/Installation Requirements
 

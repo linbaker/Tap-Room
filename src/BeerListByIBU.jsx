@@ -4,18 +4,18 @@ import Beer from './Beer';
 
 function BeerListByIBU() {
 
-  function compare(a, b) {
-    const ibuA = a.ibu;
-    const ibuB = b.ibu;
-
-    let comparison = 0;
-    if (ibuA > ibuB) {
-      comparison = 1;
-    } else if (ibuA < ibuB) {
-      comparison = -1;
-    }
-    return comparison;
-  }
+  // function compare(a, b) {
+  //   const ibuA = a.ibu;
+  //   const ibuB = b.ibu;
+  //
+  //   let comparison = 0;
+  //   if (ibuA > ibuB) {
+  //     comparison = 1;
+  //   } else if (ibuA < ibuB) {
+  //     comparison = -1;
+  //   }
+  //   return comparison;
+  // }
   // var beers[] =
 
     return (
@@ -33,7 +33,7 @@ function BeerListByIBU() {
             pints={beer.pints}
             />
 
-    //         const myData = [].concat(this.state.data)
+    //         const beer = [].concat(this.state.data)
     // .sort((a, b) => a.itemM > b.itemM)
     // .map((item, i) =>
     //     <div key={i}> {item.matchID} {item.timeM}{item.description}</div>

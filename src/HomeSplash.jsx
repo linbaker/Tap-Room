@@ -18,7 +18,6 @@ function HomeSplash() {
     // display: 'flex',
     // alignItems: 'center',
     // justifyContent: 'center'
-
   }
   return (
     <div style={homeSplashStyles}>

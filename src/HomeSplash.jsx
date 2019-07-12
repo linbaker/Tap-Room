@@ -11,9 +11,10 @@ function HomeSplash() {
     backgroundRepeat: 'no-repeat'
   }
   const logoStyles = {
-    backgroundColor: '#C3A995',
+    backgroundColor: '#ebddd3',
     width: '70vw',
-    height: '50vh'
+    height: '50vh',
+
   }
   return (
     <div style={homeSplashStyles}>

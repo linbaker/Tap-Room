@@ -3,6 +3,13 @@ import { beers } from './assets/BeerData';
 import Beer from './Beer';
 
 function BeerList() {
+
+  constructor(props) {
+  super(props);
+  this.state = {
+    formVisibleOnPage: false
+  };
+  
     return (
       <div>
         <h1>Now on Tap:</h1>

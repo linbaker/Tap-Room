@@ -3,7 +3,7 @@
 https://github.com/linbaker/Tap-Room
 
 
-#### _React for Epicodus, 07.04.2019_
+#### _React for Epicodus, 07.12.2019_
 
 #### By _**Lindsey Baker**_
 

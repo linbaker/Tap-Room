@@ -1,4 +1,5 @@
 import React from 'react';
+import { Column, Row } from 'simple-flexbox';
 import TapsPhoto from './assets/taps.jpg';
 import logo from './assets/logo.png';
 
@@ -12,15 +13,23 @@ function HomeSplash() {
   }
   const logoStyles = {
     backgroundColor: '#ebddd3',
-    width: '70vw',
-    height: '50vh',
+    // width: '70vw',
+    // height: '50vh',
+    // display: 'flex',
+    // alignItems: 'center',
+    // justifyContent: 'center'
 
   }
   return (
     <div style={homeSplashStyles}>
-      <div style={logoStyles}>
-        <img src={logo} alt="Generic Breweric Beer Barrel Logo" />
-      </div>
+      <Row vertical='center'>
+       <Column flexGrow={1} horizontal='center'>
+         <div style={logoStyles}>
+           <img src={logo} alt="Generic Breweric Beer Barrel Logo" />
+         </div>
+       </Column>
+   </Row>
+
     <br/>
     </div>
   );

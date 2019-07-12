@@ -15,7 +15,7 @@ toggleCollapse = () => {
 
 render() {
   return (
-      <MDBNavbar color="brown" dark expand="md">
+      <MDBNavbar color="indigo" dark expand="md">
         <MDBNavbarBrand>
           <strong className="white-text">Generic Brewery</strong>
         </MDBNavbarBrand>
@@ -37,10 +37,10 @@ render() {
                   <span className="mr-2">Our Beers</span>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  {/* For later sorted tap lists  */}
                   <MDBDropdownItem href="#!">On Tap Now</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">By Price</MDBDropdownItem> 
-                  <MDBDropdownItem href="#!">By IBU</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>

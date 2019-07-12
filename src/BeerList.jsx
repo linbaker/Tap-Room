@@ -1,6 +1,7 @@
 import React from 'react';
 import { beers } from './assets/BeerData';
 import Beer from './Beer';
+import BeerControl from './BeerControl'
 
 function BeerList() {
 
@@ -9,7 +10,7 @@ function BeerList() {
   this.state = {
     formVisibleOnPage: false
   };
-  
+
     return (
       <div>
         <h1>Now on Tap:</h1>

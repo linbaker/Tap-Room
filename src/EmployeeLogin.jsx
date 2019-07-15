@@ -1,38 +1,48 @@
 import React from 'react';
-import { Column, Row } from 'simple-flexbox';
-import TapsPhoto from './assets/taps.jpg';
-import logo from './assets/logo.png';
+import PropTypes from 'prop-types';
 
-function HomeSplash() {
-  const homeSplashStyles = {
-    width: '100vw',
-    height: '800px',
-    backgroundImage: `url(${TapsPhoto})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
-  }
-  const logoStyles = {
-    backgroundColor: '#ebddd3',
-    // width: '70vw',
-    // height: '50vh',
-    // display: 'flex',
-    // alignItems: 'center',
-    // justifyContent: 'center'
-  }
-  return (
-    <div style={homeSplashStyles}>
-      <Row vertical='center'>
-       <Column flexGrow={1} horizontal='center'>
-         <div style={logoStyles}>
-           <img src={logo} alt="Generic Breweric Beer Barrel Logo" />
-         </div>
-       </Column>
-   </Row>
+export default function EmployeeLogin(props) {
+    let User = 'Employee'
+    let Password = 'Password';
+    let inputUser = null;
+    let inputPassword = null;
 
-    <br/>
-    </div>
-  );
+    function handleEmployeeLogin(employee) {
+        employee.preventDefault();
+
+        if (Password === inputPassword.value && User === inputUser.value) {
+            props.onEmployeeLogin();
+            password.value = '';
+            user.value = '';
+        } else {
+            password.value = '';
+            user.value = '';
+        }
+    }
+    return (
+
+        <div>
+            <h4>Employee Login</h4>
+            <form onSubmit={handleEmployeeLogin}>
+                <input
+                    id='user'
+                    placeholder="Username"
+                    type="text"
+                    ref={(input) => { inputUser = input; }}
+                />
+
+                <input
+                    id='password'
+                    placeholder="password"
+                    type="text"
+                    ref={(input) => { inputPassword = input; }}
+                />
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    )
 }
 
-
-export default HomeSplash;
+EmployeeLogin.propTypes = {
+    onEmployeeLogin: PropTypes.func
+}

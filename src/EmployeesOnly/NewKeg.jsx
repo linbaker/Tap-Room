@@ -84,3 +84,7 @@ function NewKeg(event) {
 
 export default NewKeg;
 
+NewBeer.propTypes = {
+  onAddingBeer: PropTypes.func
+}
+

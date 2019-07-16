@@ -2,7 +2,7 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import { v4 } from 'uuid';
 
-function NewKeg(event) {
+function NewKeg(props) {
   // name: "Sour Flower",
   // brand: "Culmination",
   // type: "Gose & Sour",
@@ -12,22 +12,33 @@ function NewKeg(event) {
   // description: "Sour blonde ale with raspberry & lime zest",
   // pints: "124"
 
-  event.preventDefault();
-  props onAddingBeer({name: Name.value, brand: Brand.value, type: Type.value, price: Price.value, ibu: IBU.value, abv: ABV.value, description: Description.value, pints: Pints.value, id: v4() })
+    let Name = null;
+    let Brand = null;
+    let Type = null;
+    let Price = null;
+    let IBU = null;
+    let ABV = null;
+    let Description = null;
+    let Pints = null;
 
-  Name.value = '';
-  Brand.value=  '';
-  Type.value=  '';
-  Price.value=  '';
-  IBU.value=  '';
-  ABV.value = '';
-  Description.value = '';
-  Pints.value = '124';
+  function handleNewBeerSubmit(event){
+    event.preventDefault();
+    props.onAddingBeer({name: Name.value, brand: Brand.value, type: Type.value, price: Price.value, ibu: IBU.value, abv: ABV.value, description: Description.value, pints: Pints.value, id: v4() })
+
+    Name.value = '';
+    Brand.value=  '';
+    Type.value=  '';
+    Price.value=  '';
+    IBU.value=  '';
+    ABV.value = '';
+    Description.value = '';
+    Pints.value = '124';
+  }
 
   return (
     <div>
       <h1>Add a beer to the list:</h1>
-      <form onSubmit>
+      <form onSubmit={handleNewBeerSubmit}>
         <input
           type='text'
           id='name'

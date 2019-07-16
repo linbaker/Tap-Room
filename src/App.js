@@ -7,7 +7,7 @@ import NavBar from './NavBar';
 import HomeSplash from './HomeSplash';
 import About from './About';
 import BeerList from './BeerList';
-import BeerListByIBU from './BeerListByIBU';
+import BeerControl from './BeerControl';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
           <Route exact path="/" component={HomeSplash} />
           <Route path="/BeerList" component={BeerList} />
           <Route path="/AboutUs" component={About} />
+          <Route path="/NewBeer"  render={() => <BeerControl onAddingNewBeer={this.handleAddingNewBeer} />} /> />
         </Switch>
     </HashRouter>
     <About/>

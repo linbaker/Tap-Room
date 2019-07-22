@@ -1,6 +1,5 @@
 import React from 'react';
 import { HashRouter, Switch, Route } from 'react-router-dom';
-import logo from './logo.svg';
 import './App.css';
 import 'mdbreact/dist/css/mdb.css';
 import NavBar from './NavBar';
@@ -18,7 +17,6 @@ function App() {
           <Route exact path="/" component={HomeSplash} />
           <Route path="/BeerList" component={BeerList} />
           <Route path="/AboutUs" component={About} />
-          <Route path="/NewBeer"  render={() => <BeerControl onAddingNewBeer={this.handleAddingNewBeer} />} /> />
         </Switch>
     </HashRouter>
     <About/>

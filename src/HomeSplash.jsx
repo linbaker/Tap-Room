@@ -1,5 +1,4 @@
 import React from 'react';
-import { Column, Row } from 'simple-flexbox';
 import TapsPhoto from './assets/taps.jpg';
 import logo from './assets/logo.png';
 
@@ -21,13 +20,13 @@ function HomeSplash() {
   }
   return (
     <div style={homeSplashStyles}>
-      <Row vertical='center'>
-       <Column flexGrow={1} horizontal='center'>
+{/*    <Row vertical='center'>
+  <Column flexGrow={1} horizontal='center'>*/}
          <div style={logoStyles}>
            <img src={logo} alt="Generic Breweric Beer Barrel Logo" />
          </div>
-       </Column>
-   </Row>
+{/*       </Column>
+</Row>*/}
 
     <br/>
     </div>

@@ -95,7 +95,7 @@ function NewKeg(props) {
 
 export default NewKeg;
 
-NewBeer.propTypes = {
+NewKeg.propTypes = {
   onAddingBeer: PropTypes.func
 }
 

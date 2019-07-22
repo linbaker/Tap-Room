@@ -31,7 +31,7 @@ render() {
             <MDBNavItem>
               <MDBNavLink to="/AboutUs">About Us</MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem>
+            {/*<MDBNavItem>
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
                   <span className="mr-2">Our Beers</span>
@@ -43,7 +43,7 @@ render() {
                   <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
-            </MDBNavItem>
+            </MDBNavItem>*/}
           </MDBNavbarNav>
           <MDBNavbarNav right>
             <MDBNavItem>

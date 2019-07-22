@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import NewKeg from './EmployeesOnly/NewKeg';
+import NewKeg from './NewKeg';
 import EmployeeLogin from './EmployeeLogin';
 
 

@@ -6,7 +6,7 @@ import NavBar from './NavBar';
 import HomeSplash from './HomeSplash';
 import About from './About';
 import BeerList from './BeerList';
-import BeerControl from './BeerControl';
+import NewKeg from './NewKeg';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
           <Route exact path="/" component={HomeSplash} />
           <Route path="/BeerList" component={BeerList} />
           <Route path="/AboutUs" component={About} />
+          <Route path="/AddBeer" component={NewKeg} />
         </Switch>
     </HashRouter>
     <About/>

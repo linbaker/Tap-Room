@@ -1,7 +1,7 @@
 import React from 'react';
 import { beers } from './assets/BeerData';
 import Beer from './Beer';
-import NewKeg from './EmployeesOnly/NewKeg'
+import NewKeg from './NewKeg'
 
 class BeerList extends React.Component {
 

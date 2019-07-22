@@ -3,14 +3,6 @@ import { PropTypes } from 'prop-types';
 import { v4 } from 'uuid';
 
 function NewKeg(props) {
-  // name: "Sour Flower",
-  // brand: "Culmination",
-  // type: "Gose & Sour",
-  // price: "6",
-  // ibu: "5",
-  // abv: "5.5",
-  // description: "Sour blonde ale with raspberry & lime zest",
-  // pints: "124"
 
     let Name = null;
     let Brand = null;

@@ -31,19 +31,9 @@ render() {
             <MDBNavItem>
               <MDBNavLink to="/AboutUs">About Us</MDBNavLink>
             </MDBNavItem>
-            {/*<MDBNavItem>
-              <MDBDropdown>
-                <MDBDropdownToggle nav caret>
-                  <span className="mr-2">Our Beers</span>
-                </MDBDropdownToggle>
-                <MDBDropdownMenu>
-                  <MDBDropdownItem href="#!">On Tap Now</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                </MDBDropdownMenu>
-              </MDBDropdown>
-            </MDBNavItem>*/}
+            <MDBNavItem>
+            <MDBNavLink to="/AddBeer">Add New Beer</MDBNavLink>
+          </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
             <MDBNavItem>

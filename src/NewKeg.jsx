@@ -3,7 +3,7 @@ import { PropTypes } from 'prop-types';
 import { v4 } from 'uuid';
 
 function NewKeg(props) {
-
+  console.log(props);
     let Name = null;
     let Brand = null;
     let Type = null;
@@ -13,9 +13,9 @@ function NewKeg(props) {
     let Description = null;
     let Pints = null;
 
-  function handleNewBeerSubmit(event){
+  function addBeer(event){
     event.preventDefault();
-    props.onAddingBeer({name: Name.value, brand: Brand.value, type: Type.value, price: Price.value, ibu: IBU.value, abv: ABV.value, description: Description.value, pints: Pints.value, id: v4() })
+    props.onNewBeerSubmit({name: Name.value, brand: Brand.value, type: Type.value, price: parseInt(Price.value), ibu: parseInt(IBU.value), abv: parseInt(ABV.value), description: Description.value, pints: parseInt(Pints.value), id: v4() });
 
     Name.value = '';
     Brand.value=  '';
@@ -30,54 +30,59 @@ function NewKeg(props) {
   return (
     <div>
       <h1>Add a beer to the list:</h1>
-      <form onSubmit={handleNewBeerSubmit}>
+      <form onSubmit={addBeer}>
         <input
           type='text'
           id='name'
           ref={(input) => {Name = input;}}
           placeholder='Name'/>
-
+        <br/>
         <input
           type='text'
           id='brand'
           ref={(input) => {Brand = input;}}
           placeholder='Brand'/>
-
+        <br/>
         <input
           type='text'
           id='type'
           ref={(input) => {Type = input;}}
           placeholder='Type'/>
 
-
+         <br/>
         <input
           type='number'
           id='price'
           ref={(input) => {Price = input;}}
           placeholder='Price'/>
 
+        <br/>
         <input
           type='number'
           id='ibu'
           ref={(input) => {IBU = input;}}
           placeholder='IBU'/>
 
+        <br/>
         <input
           type='number'
           id='abv'
           ref={(input) => {ABV = input;}}
           placeholder='ABV'/>
 
+        <br/>
         <textarea
           id='description'
           ref={(input) => {Description = input;}}
           placeholder='Beer description.'/>
 
+        <br/>
         <input
           type='number'
           id='pints'
           ref={(input) => {Pints = input;}}
           placeholder='Pints'/>
+        <br/>
 
         <button type='submit'>Add new beer</button>
       </form>
@@ -85,9 +90,10 @@ function NewKeg(props) {
   );
 }
 
+NewKeg.propTypes = {
+  onNewBeerSubmit: PropTypes.func
+};
+
 export default NewKeg;
 
-NewKeg.propTypes = {
-  onAddingBeer: PropTypes.func
-}
 

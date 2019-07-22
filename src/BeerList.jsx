@@ -1,7 +1,8 @@
 import React from 'react';
 import { beers } from './assets/BeerData';
 import Beer from './Beer';
-import NewKeg from './NewKeg'
+import NewKeg from './NewKeg';
+import PropTypes from 'prop-types'
 
 class BeerList extends React.Component {
 
@@ -15,9 +16,9 @@ class BeerList extends React.Component {
 }
 
 handleNewBeerSubmit(newBeer) {
-  let newAllBeerOnTap = this.state.allKegs;
+  let newAllBeerOnTap = this.state.allBeerOnTap;
   newAllBeerOnTap.push(newBeer);
-  this.setState({ allBeer: newAllBeerOnTap });
+  this.setState({ allBeerOnTap: newAllBeerOnTap });
 }
 
 handlePourBeer(index) {
@@ -52,6 +53,10 @@ handlePourBeer(index) {
         </div>
       );
    }
+}
+
+BeerList.propTypes = {
+  onNewBeerSubmit: PropTypes.func
 }
 
 export default BeerList;

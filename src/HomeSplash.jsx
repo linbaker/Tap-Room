@@ -1,6 +1,7 @@
 import React from 'react';
 import TapsPhoto from './assets/taps.jpg';
 import logo from './assets/logo.png';
+import About from './About';
 
 function HomeSplash() {
   const homeSplashStyles = {
@@ -29,6 +30,7 @@ function HomeSplash() {
 </Row>*/}
 
     <br/>
+    <About/>
     </div>
   );
 }
